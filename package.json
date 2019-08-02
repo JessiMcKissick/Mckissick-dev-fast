@@ -1,0 +1,26 @@
+{
+  "name": "mcdev-streamlined",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "fsevents": "^1.2.9",
+    "gulp": "^4.0.2",
+    "nan": "^2.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidMcKissick/Mckissick-dev-fast.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DavidMcKissick/Mckissick-dev-fast/issues"
+  },
+  "homepage": "https://github.com/DavidMcKissick/Mckissick-dev-fast#readme"
+}
