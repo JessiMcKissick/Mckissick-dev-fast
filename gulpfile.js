@@ -7,7 +7,7 @@ gulp.task('dev', function(){
         server: {
             baseDir: "./"
         },
-        files: ['index.html', 'Script/main.js', 'pages/*.html', 'Script/*.js']
+        files: ['index.html', 'pages/*.html', 'Script/*.js']
     });
     gulp.watch("Style/scss/*.scss", gulp.series('sass'));
     gulp.watch("*.html").on('change', browserSync.reload);
