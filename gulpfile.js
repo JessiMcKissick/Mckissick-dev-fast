@@ -19,3 +19,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest("Style/dist"))
         .pipe(browserSync.stream());
 });
+
+gulp.task('distribute', function(){
+    
+});

@@ -1,3 +1,54 @@
-button{
-    color: orange;
+body{
+    --main-color: #1600db;
+    --alt-color: white;
+
+    header{
+        width: 100vw;
+        display: flex;
+        background-color: var(--main-color);
+        #mcLogo{
+            width: 3vw;
+            padding: 3px 0px 3px 10px;
+        }
+        nav{
+            width: 20vw;
+            li{
+                list-style: none;
+                padding: 10px;
+                float: left;
+                color: white;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #content{
+        padding: 20px;
+    }
+    
+    footer{
+        background-color: var(--main-color);
+    
+    
+        .socialImg{
+            width: 40px;
+            padding: 5px 5px 0px 5px;
+        }
+        hr{
+            margin: 10px 0px 10px 0px;
+        }
+        .footerNotice{
+            color: white;
+            padding: 0px 0px 5px 10px;
+            margin: 0px;
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
 }
