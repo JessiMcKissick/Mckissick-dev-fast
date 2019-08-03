@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');  
 var browserSync = require('browser-sync').create();
 
 gulp.task('dev', function(){
@@ -6,16 +7,15 @@ gulp.task('dev', function(){
         server: {
             baseDir: "./"
         },
-        files: ['index.html', 'Script/main.js']
+        files: ['index.html', 'Script/main.js', 'pages/*.html', 'Script/*.js']
     });
+    gulp.watch("Style/scss/*.scss", gulp.series('sass'));
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-
-gulp.task('browser-sync', function () {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        },
-        files: ['index.html']
-    });
+gulp.task('sass', function () {
+    return gulp.src("Style/scss/app.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("Style/dist"))
+        .pipe(browserSync.stream());
 });
