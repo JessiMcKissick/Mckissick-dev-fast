@@ -15,10 +15,24 @@ larger apps, but in the case of my extremely simple site, it's just wasted overh
 - Eslint
 
 ### How to run
+#### Setup
+These directions follow the assumption you have NPM installed.
+1. npm i -g browser-sync
+2. npm i -g gulp-cli
+3. npm i -g sass
 
+#### Install and run
 1. Clone the repository
 2. cd into the repository
 3. npm i
 4. gulp dev
 
-Done.
+#### Running tests
+1. npm i cypress --save
+2. Assuming you have npm > 5.2: npx cypress open, if not, ./node_modules/.bin/cypress open
+3. Select the test file to run and run it.
+
+#### Troubleshooting
+If when trying to run gulp commands (E.G. gulp dev) you get ENOENT errors, just use the following command: npm rebuild node-sass
+This fixes it most of the time. If there's a different issue that isn't cured by a rebuild, submit an issue and I'll look into it.
+
