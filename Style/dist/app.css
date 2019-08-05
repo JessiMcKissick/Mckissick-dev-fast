@@ -121,3 +121,32 @@ body {
       body footer .footerNotice a {
         color: white;
         text-decoration: underline; }
+
+@media screen and (max-width: 835px) {
+  header img {
+    width: 0vw !important; }
+  header li a {
+    font-size: 2em !important; }
+  #content {
+    display: block !important;
+    width: 100vw;
+    margin: 0px; }
+    #content .contentCell {
+      width: 100vw;
+      margin-left: auto;
+      margin-right: auto; }
+    #content .sectionLeft {
+      margin: 0px !important;
+      margin-top: 10px !important; }
+    #content .titleCell h3 {
+      font-size: 3vh !important; }
+    #content .comLogo {
+      width: 100%;
+      max-width: 100% !important; }
+    #content .big {
+      width: 60%;
+      max-width: 60% !important; }
+    #content p {
+      font-size: 1em !important; }
+    #content .trademarkNotice {
+      font-size: 0.5em !important; } }

@@ -87,6 +87,9 @@ body{
     }
 
     #contentProjects{
+      
+
+
         .projectPanel{
             margin-top: 20px;
             width: 90vw;
@@ -157,6 +160,8 @@ body{
             }
         }
     }
+
+    
     
     
     footer{
@@ -178,6 +183,52 @@ body{
                 color: white;
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 835px){
+    header{
+        img{
+            width: 0vw !important;
+        }
+        li{
+            a{
+                font-size: 2em !important;
+            }
+        }
+    }
+    #content{
+        display: block !important;
+        width: 100vw;
+        margin: 0px;
+        .contentCell{
+            width: 100vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sectionLeft{
+            margin: 0px !important;
+            margin-top: 10px !important;
+        }
+        .titleCell{
+            h3{
+                font-size: 3vh !important;
+            }
+        }
+        .comLogo{
+            width: 100%;
+            max-width: 100% !important;
+        }
+        .big{
+            width: 60%;
+            max-width: 60% !important;
+        }
+        p{
+            font-size: 1em !important;
+        }
+        .trademarkNotice{
+            font-size: 0.5em !important;
         }
     }
 }
