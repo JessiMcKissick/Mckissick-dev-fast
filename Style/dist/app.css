@@ -1,25 +1,112 @@
 body {
   --main-color: #1600db;
-  --alt-color: white; }
+  --alt-color: white;
+  overflow-x: hidden; }
   body header {
     width: 100vw;
     display: flex;
     background-color: var(--main-color); }
     body header #mcLogo {
-      width: 3vw;
-      padding: 3px 0px 3px 10px; }
+      width: 5vw;
+      padding: 3px 0px 3px 10px;
+      margin-right: 1vw; }
     body header nav {
-      width: 20vw; }
+      width: 50vw; }
+      body header nav .active {
+        color: yellow; }
       body header nav li {
         list-style: none;
         padding: 10px;
         float: left;
         color: white; }
         body header nav li a {
+          font-size: 2.5vw;
           text-decoration: none;
           color: white; }
+        body header nav li a:hover {
+          color: yellow;
+          text-decoration: none;
+          font-weight: bold; }
   body #content {
-    padding: 20px; }
+    display: flex; }
+    body #content .sectionRight {
+      width: 25vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw; }
+    body #content .sectionLeft {
+      margin: 3vw;
+      width: 65vw; }
+      body #content .sectionLeft .titleCell {
+        background-color: var(--main-color);
+        border-radius: 10px 10px 0px 0px; }
+        body #content .sectionLeft .titleCell h3 {
+          color: white;
+          text-align: left;
+          padding: 20px 5px 5px 10px;
+          font-size: 2vw; }
+    body #content .contentCell {
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      body #content .contentCell p {
+        padding: 10px;
+        font-size: 1.2vw; }
+      body #content .contentCell .big {
+        max-width: 20%;
+        border-radius: 20px; }
+      body #content .contentCell img {
+        max-width: 40%; }
+      body #content .contentCell .trademarkNotice {
+        font-size: 0.7vw; }
+  body #contentProjects .projectPanel {
+    margin-top: 20px;
+    width: 90vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    body #contentProjects .projectPanel .active {
+      background-color: #41cc41;
+      color: white;
+      border-radius: 10px 10px 0px 0px;
+      padding: 5px 0px 5px 10px; }
+    body #contentProjects .projectPanel .inactive {
+      background-color: red;
+      border-radius: 10px 10px 0px 0px;
+      color: white;
+      padding: 5px 0px 5px 10px; }
+    body #contentProjects .projectPanel .projName {
+      background-color: var(--main-color);
+      color: white;
+      padding-left: 10px; }
+    body #contentProjects .projectPanel p {
+      padding: 10px; }
+    body #contentProjects .projectPanel img {
+      width: 100%; }
+  body #contentContact {
+    padding: 20px 0px 20px 0px; }
+    body #contentContact div {
+      border-radius: 10px;
+      width: 75vw;
+      margin-left: auto;
+      margin-right: auto; }
+      body #contentContact div form input {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 100%; }
+      body #contentContact div form textarea {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 50vh; }
+      body #contentContact div form button {
+        width: 100%;
+        background-color: var(--main-color);
+        color: white;
+        border-radius: 5px;
+        font-size: 1.5em; }
   body footer {
     background-color: var(--main-color); }
     body footer .socialImg {

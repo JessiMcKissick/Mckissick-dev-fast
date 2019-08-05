@@ -22,10 +22,22 @@
         <nav>
             <li><a href="../index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </nav>
     </header>
-    <section id="content">
+    <section id="contentContact">
+        <div>
+            <h2>Contact me</h2>
+            <p>If you would like to contact me, fill in the form below or
+                email me directly at david@mckissick.dev
+            </p>
+            <form name="contact" netlify>
+                <input type="text" name="Name" placeholder="Name" class="name">
+                <input type="text" name="email" placeholder="Email address (optional)">
+                <textarea name="Message" placeholder="Message"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
 
     </section>
     <footer>
